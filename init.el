@@ -32,6 +32,12 @@
 (blink-cursor-mode -1);;Set cursor do not flash
 (set-cursor-color "white")
 
-;;Set Theme
-(add-to-list 'load-path "~/.emacs.d/color-theme")
-(require 'color-theme)
+;;Set emacs color-theme
+;;(add-to-list 'load-path "~/.emacs.d/color-theme")
+;;(require 'color-theme)
+
+;;Set theme
+(add-to-list 'load-path "~/.emacs.d/color-theme/themes/emacs-color-theme-solarized")
+;;(load-theme 'solarized t)
+(require 'color-theme-solarized)
+(color-theme-solarized)
