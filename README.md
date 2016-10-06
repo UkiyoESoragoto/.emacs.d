@@ -15,6 +15,9 @@ My emacs settings
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+ 
+ 
+(add-to-list 'load-path (expand-file-name "~/.emacs.d"))  
 
 
 ;;Set show line number
@@ -41,4 +44,10 @@ My emacs settings
 
 ;;Set default font
 (set-default-font "-*-Monaco-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1")
+
+;;Load google c style
+(require 'google-c-style)  
+(add-hook 'c-mode-common-hook 'google-set-c-style)  
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)  
+
 ```
