@@ -17,7 +17,7 @@ My emacs settings
  )
  
  
-(add-to-list 'load-path (expand-file-name "~/.emacs.d"))  
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))  
 
 
 ;;Set show line number
