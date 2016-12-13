@@ -29,12 +29,15 @@
 ;;Set show line number
 (global-linum-mode 1)
 
-;;Set frame size
-(set-frame-width (selected-frame) 150)
-(set-frame-height (selected-frame) 35)
-
 ;;Set frame location
 (set-frame-position (selected-frame) 350 150)
+
+;;Set frame size
+;;(set-frame-width (selected-frame) 120)
+;;(set-frame-height (selected-frame) 35)
+;;(set-frame-size (selected-frame) 120 25)
+(add-to-list 'default-frame-alist '(height . 35))
+(add-to-list 'default-frame-alist '(width . 120))
 
 ;;Set cursor
 ;;(setq-default cursor-type 'bar)
